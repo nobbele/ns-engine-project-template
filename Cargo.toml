@@ -1,0 +1,16 @@
+[package]
+name = "ns-engine-project-template"
+version = "0.1.0"
+authors = ["Nobbele <realnobbele@gmail.com>"]
+edition = "2018"
+build = "build-zip.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nsengine = { git = "https://github.com/nobbele/ns-engine" }
+
+[build-dependencies]
+fs_extra = "1.2.0"
+zip = "0.5.9"
+walkdir = "2.3.1"

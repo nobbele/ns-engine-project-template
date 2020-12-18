@@ -1,0 +1,30 @@
+scene StreetNight
+
+play bgm music
+
+load Yukio normal at Left
+
+_: It’s freezing cold recently, there’s so much snow. It’s also so dark outside at this time of the year.
+
+_: I should get some hot chocolate to warm myself; if I remember correctly there should be a vending machine over there.
+
+scene VendingMachine
+
+_: “The feeling of warm chocolate going in my body never gets old. I should get an extra one for my late movie night.”
+
+scene Bridge
+
+_: There are usually a lot of ducks around the bridge during the day.
+
+_: I need to get going now though.
+
+_: “I catch a glimpse of a girl who was sitting on the side of the bridge.”
+
+_: “It looks like she’s feeling down. Is she crying?”
+
+[Ignore / Walk up to her]
+if choice = 2
+    jump bridge
+else
+    jump ignore
+end
